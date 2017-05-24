@@ -1,0 +1,11 @@
+<div class="mm-dashboard-container">
+	<h2 class="mm-dashboard-title">{{config.title}}</h2>
+	<div class="mm-dashboard-grid" [ngGrid]="config.gridConfig">
+		<div class="mm-dashboard-item" *ngFor="let dashItem of config.items; let i = index" [(ngGridItem)]="dashItem.gridConfig"
+			(onGridItemChangeStop)="handleNgGridItemChange($event)" (onResizeAny)="handleOnResizeAny($event)">
+			<div class="mm-widget" id="{{i}}" (click)="handleItemSelect(i)">
+				<div mm-widget [config]="dashItem.widgetConfig" [data]="data" (dataChange)="handleDataChange($event)"></div>
+			</div>
+	</div>
+</div>
+</div>

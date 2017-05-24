@@ -1,0 +1,39 @@
+.mm-dashboard-title {
+    margin-top: 0px;
+}
+
+.mm-dashboard-item {
+    border: 1px solid #efefef;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+.mm-dashboard-item-title {
+    padding-left: 10px;
+    border-bottom: 1px dashed #cccccc; 
+}
+
+.mm-dashboard-item svg {
+    width: 100%;
+    flex: 1;
+}
+
+.mm-line {
+  fill: none;
+  /*stroke: steelblue;*/
+  stroke-width: 1.5px;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
